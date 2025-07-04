@@ -1,0 +1,16 @@
+MagicAddrForSecondCore.out
+-map MagicAddrForSecondCore.map										
+-a          													
+-image 
+-zero         												
+-order	L	 
+-memwidth 8
+-romwidth 16
+-boot                	 									
+-bootorg 0x70000900											
+-bootsection .boot_load 0x70000000     
+
+ROMS
+{
+    FLASH: org = 0x70000000, len = 0x20000, romwidth = 16, files = {MagicAddrForSecondCore.hex}
+}  
